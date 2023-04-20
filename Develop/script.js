@@ -64,6 +64,22 @@ function generatePassword() {
     count++
   }
 
+  // Arrays to create selections for password criteria 
+
+  if (verifyUppercase) {
+    passwordCharacters = passwordCharacters.concat(uppercaseLetters);
+  }
+  if (verifyLowercase) {
+    passwordCharacters = passwordCharacters.concat(lowercaseLetters);
+  }
+  if (verifyNumbers) {
+    passwordCharacters = passwordCharacters.concat(numbers);
+  }
+  if (verifySpecial) {
+    passwordCharacters = passwordCharacters.concat(specialCharacters);
+  }
+
+  return generateRandomString(passwordLength, passwordCharacters)
 }
 
 // Add event listener to generate button
