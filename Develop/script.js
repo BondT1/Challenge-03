@@ -33,6 +33,16 @@ function verifyLength() {
   return Number(verifyLength);
 } 
 
+function generateRandomString(passwordLength, passwordCharacters) {
+  // randomizes characters with specified length
+  let confirmedPassword = ""
+  for (let i = 0; i < passwordLength; i++) {
+    let random =[Math.floor(Math.random() * passwordCharacters.length)];
+    confirmedPassword = confirmedPassword + passwordCharacters[random];
+  }
+  return confirmedPassword;
+}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
