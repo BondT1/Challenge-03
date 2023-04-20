@@ -43,6 +43,13 @@ function generateRandomString(passwordLength, passwordCharacters) {
   return confirmedPassword;
 }
 
+function generatePassword() {
+  const passwordLength = verifyLength();
+  var passwordCharacters = "";
+
+  var verifyUppercase = verifyLowercase = verifyNumbers = verifySpecial = false;
+  var count = 0; 
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
