@@ -49,6 +49,21 @@ function generatePassword() {
 
   var verifyUppercase = verifyLowercase = verifyNumbers = verifySpecial = false;
   var count = 0; 
+
+  // loops to previous prompt if no selected criteria 
+  while (verifyUppercase === false && verifyLowercase === false && verifyNumbers === false && verifySpecial === false) {
+    if (count > 0) {
+      alert("At least one criteria must be selected");
+    }
+  
+    verifyUppercase = confirm("Do you want uppercase characters in your password?");
+    verifyLowercase = confirm("Do you want lowercase characters in your password?");
+    verifyNumbers = confirm("Do you want numbers in your password?");
+    verifySpecial = confirm("Do you want special characters in your password?");
+
+    count++
+  }
+
 }
 
 // Add event listener to generate button
