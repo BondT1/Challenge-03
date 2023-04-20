@@ -16,7 +16,8 @@ The Javascript features used to create this project consisted of:
 - Methods
 - Prompts and Alerts
 
-The deployed application can be viewed through this link - 
+The deployed application can be viewed through this link - https://bondt1.github.io/Challenge-03-Javascript-Password-Generator/
+
 ## Installation
 
 N/A
